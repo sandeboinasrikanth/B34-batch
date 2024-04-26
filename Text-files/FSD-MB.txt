@@ -1,0 +1,318 @@
+
+Problem : We can order only from a single Restaurant(most scenarios)
+
+Solution : Multiple restaurant
+
+Mulfood - Order from multiple Restaurants
+
+Abstract:
+
+ Making food availble from multiple restaturants throgh
+
+1. POC mode of delivery to make it feasible
+
+2. Restricting the user bt geography
+
+
+Types of users:
+
+1. Hotels
+
+2. Customers
+
+3. POC
+
+4. Delivery persons
+
+5. Admin
+
+Modules:
+
+1. Restaurant Module:
+
+# The Restaurant has to register themselves to get an insight about MulFood.
+
+# The restaurant has to select the types of memberships available with us.
+
+# The Restauarant can tie up with or without delivery professionals,
+
+# After selecting suitable membership they will be redirected towards the payment page.
+
+# The Restaurant makes the payment to become a member of MulFood.
+
+# A Profile will be created for the Restaurant.
+
+# There will be an option provided to stop the services with MulFood.
+
+# The restaurant can propose their name,set a profile pic,add banners and add description about them.
+
+# The Restaurant will be enabled to add their Menus.
+
+# The Restaurant can add the type,categories,taste,combos and cost of the food and special servings in menu page.
+
+# The restaurant will disclose the timings and availability of the food.
+
+# The restaurant will have a choice to post offers and discounts.
+
+# Once everything is done the Restaurant is ready to serve to the customers of MulFood.
+
+# Restaurant will be enabled to interact with MulFood.
+
+# Restaurant will be enabled with a chat to interact with customers.
+
+# Restaurant providing offer has to be stated on their page.
+
+
+
+WorkFlow:
+
+Restaurant Module:
+
+1.Signup Page:
+
+# Register/Sign up -> Send otp -> Confirm(Mobile number) / Hide password
+
+# Email check/Phone No check->On leaving Textbox
+
+# Login
+
+# Forgot Password -> Send Otp -> Confirm -> Change Password
+
+# Terms and conditions
+
+# Help
+
+# Google account
+
+# Facebook account
+
+# Captcha -> Checkbox clicking(Im not a Robot)
+
+# Change Language
+
+# Skip option
+
+# Referral 
+
+
+Wireframe:
+
+Database Design:
+
+Store, Fetch and Manipulate data with database
+
+database- data will be stores as tables
+
+Tables - Rows and columns
+
+Rows - A complete information about a single user
+
+Column - Single info about all users
+
+Student
+
+Name      phone    address   fathers_name
+
+Raj       2345     Chennai   Alex           - info abt Raj
+Vimal     6543     Madurai   Raja           - info abt Vimal
+  |
+  |
+  | 
+
+Name of all users
+
+
+Db Design: Tables and Columns - Should be clear abt wat info the user has to provide
+
+
+User_Master
+
+1.User_id
+2.User_type
+
+
+User_Master
+
+User_id       User_type
+
+MF1           Restaurant
+MF2           Customers
+MF3           POC
+MF4           Delivery_persons
+MF5           Admin
+
+
+
+Registration
+
+1.UserName
+2.Phone_no (PK)
+3.Email_id
+4.Address 1
+5.Address 2
+6.Location
+7.Password
+8.User_type_id
+
+
+Rest_Type_Master
+
+1.Type_id
+2.Type_name
+
+
+Rest_Category_Master
+
+1.Category_id
+2.Category_name
+
+
+Rest_Category_Master
+
+Category_id         Category_Name
+1                      Indian
+2                      Chinese
+3                      Arabian
+
+
+
+Restaurant_Profile_info
+
+1.Rest_Id (PK)
+2.REst_Name
+3.Logo
+4.Type_id(Fk)
+5.Fssai_Id
+6.Fssai_Validity
+7.Opening_time
+8.Closing_time
+9.Delivery_distance
+10.Waiting_time
+11.Rest_fotos
+
+
+Menu_Master
+
+1.Menu_id(Pk)
+2.Menu_Name
+3.Category_id(Fk)
+4.Type_id(Fk)
+
+
+
+Menu_id        Menu_Name       Category_id       Type_id
+
+1              C-Biriyani          1               2
+2              C-Shawarma          2               2
+3              M-Fried_rice        3               1
+
+
+Restaurant_Menu
+                                                             
+1.Res_Menu_id(PK) 
+2.Rest_id (Fk)                                             
+3.Menu_id(Fk)                                                                                              
+4.Menu_Name
+5.Price
+6.Foto
+7.Description
+
+
+Res_Menu_id     Rest_id        Menu_id    Menu_Name        Price   Foto    Description
+    Af_1         R001            1       Sc.C.Niriyani     300      img      Tasty
+    Af_2         R001            1       Spl.C.Biriyani    200      img      Good                                  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Functionalities:
+
+Class,Objects and methods
+
+Class - Blueprint,Template,collection of objects
+
+Planning to start a restaurant
+
+Naming - Foodie
+
+Types of Services/ Classification of foods:
+
+1.Indian
+
+2.Arabian                                  //Classification
+
+3.Chinese
+
+Menu:
+
+Indian
+
+1.Meals
+                                          //Process to make somethimg-methods/functions
+2.Biriyani
+
+Serve Food:
+
+Customers                                //objects - accesses the process what we have implemented
+
+
+Package Foodie_restaurant
+{
+    class Indian
+    {
+       public void Meals()        //Method
+       { 
+          //process
+          print(100);
+       }
+       public void Biriyani()
+       {
+          //process
+          print(150);
+       }
+    }
+    class Arabian
+    {
+    }
+
+    class program
+    {
+        Indian c001=new Indian();    // c001-object
+        c001.Meals();
+    }
+}
+
+Output:
+
+Bill :100
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

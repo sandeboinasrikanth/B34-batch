@@ -1,0 +1,100 @@
+// emmet shortcuts
+https://docs.emmet.io/cheat-sheet/
+
+// figma
+https://www.figma.com/
+
+
+// Gucci
+https://www.gucci.com/us/en/
+
+
+// notion.so
+
+
+// Refaucturing UI (Watch in youtube) 
+https://www.refactoringui.com/
+https://www.youtube.com/watch?v=ZT4WRRhacWk&ab_channel=SteveSchoger
+
+
+
+// You dont now yet js (github)
+https://github.com/getify/You-Dont-Know-JS
+
+
+
+// google fonts ( sarif, san-sarif)
+https://fonts.google.com/
+
+
+
+// cdnjs.com
+https://cdnjs.com/libraries/font-awesome
+
+
+// Codepen, Codesandbox,  MDN,  w3schools, stackoverflow
+https://stackoverflow.com/
+
+
+
+//color
+https://mycolor.space/gradient
+
+
+//CSS good material for practice (css tricks , Smashing magazine & josh comeau );
+https://css-tricks.com/
+https://www.smashingmagazine.com/
+https://www.joshwcomeau.com/tutorials/css/
+
+
+// awwards.com
+https://www.awwwards.com/
+
+
+// Trivago
+https://www.trivago.in/en-IN/srl/hotels-mumbai-india?search=200-64981;dr-20230604-20230605
+
+
+//Shadow generators
+https://getcssscan.com/css-box-shadow-examples
+https://cssgenerator.org/box-shadow-css-generator.html
+
+
+//Frontend menter.io
+https://www.frontendmentor.io/challenges
+
+
+//display:grid master websites (awesome-css-grid)
+//flexbox froggy
+https://github.com/valentinogagliardi/awesome-css-grid
+https://github.com/sorrycc/awesome-javascript
+
+
+//css-for-js 
+https://css-for-js.dev/
+
+
+
+//Responsive 
+https://www.apple.com/
+
+
+//Bootstrap -> layout
+https://getbootstrap.com/docs/5.1/getting-started/introduction/
+
+
+// Alternative tables
+
+
+
+// design
+https://bennettfeely.com/clippy/
+
+// Ocean 11 movie
+
+// lego blocks, jenga 
+// beautiful face ratio 
+
+
+
+

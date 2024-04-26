@@ -1,0 +1,158 @@
+
+Project title:- women safety empower 
+
+Problem:- Among the worst countries in crime,indian women people's facing some problems like gang rapes,child marriage & mental harassment.
+
+Solution:- To ensure the problem of the women in the country,entire population should be well educated and laws should be very tough for any kind of crime.
+
+Absract:- Women empowerment refers to increasing and improving the social,economic,political & legal strength of the women,  
+          To ensure equal-rights to women, & to make them confident enough to claim their rights.
+
+Types of users:-
+1) Objective
+2) Implementation
+3) Panic button
+4) Navigation drawer
+
+Modules:
+
+1)Objective:-
+
+ * We are focusing on building an effective,fast and reliant system to make the women of india feel safe and empower.
+ * Our platform will act as 24/7 for helping,so that they don't ever feel that they are alone.
+ * The citizen of india and police security should work towards a common problem.
+
+2)Implementation:-
+
+ * The users need to register themselves on the app by creating their own account.
+ * After making account user would be qualified to use all the services to protect and empower them.
+ * Services include an automated distress sos to the nearest police station and emergency contacts.
+ * Also we can track with GPS &  CCTV videos proofs.
+
+3)Panic button:-
+
+ * On clicking this button with signal the app sends msg and live locaion of the user to the nearest police station.
+ * In case the user click the button while in a public transport,the system recognises the vehicle and marks it red on the map which is being monitored by the police.
+
+4)Navigation drawer:-
+
+ * The user can change their basics information and/change their close contacts in the drawer.
+ * Every user while registering into the app would be authenticated by their AADHAR NO in order to maintain proof details.
+
+Responsibility for women safety:-
+
+ * Walk with confidence.
+ * Maintain awareness.
+ * Learn self-defence skills.
+ * Avoid certain areas.
+ * Those who have drinking (alcohol) habits avoid it.
+ * Don't trust any one.
+ * Wear proper dress.
+ * walk with friends don't walk alone.
+ * Never say to anyone that travelling alone.
+ * As much as possible avoid late night travels.
+ * Be aware of your surroundings.
+ * If you feel that someone is following you immediately rush to a crowded place.
+ * Stay safe.
+
+Workflow:-
+
+1)start
+2)switch on the 12volt power supply.
+3)GPS:-The gps (global positioning system) is a loction tracker.If gps receives signals ,gps will start calculating the current latitude and 
+	longitude values of the victim and send it as SMS to the registered mobile number using GSM module.
+4)GSM:-(Global system for mobile communication)
+	If any vibrations detected by vibration sensor,get the last location from gps and sends to gsm module.
+5)IOT:-(Internet of things)
+	IOT module track the last location of the victim and that location is updated in the webpage.
+6)NEURO STIMULATOR:-
+	Neuro stimulator and buzzer ON,to apply shock to the attackers.
+7)SOS MESSAGE:-
+	These emergency msg consist of our current location is tracked by gps and send to the GSM module in which our location and msg will send 
+	to contacts for every two minutes and calls is connected to the police.
+8)HIDDEN CAMERA:-
+	These detector is a radio frequency receiver,which picks up electromagnetic signals,such as spy camera.
+9)VIDEO RECORDER:-
+	Video recorder is activated when "FEMME"(application) is activated and records and it is useful for police to find crime investigation.
+10)AUDIO RECORDER:-
+	The audio recorder is in the hardware device,when activated audio records and send to police for further investigation.
+
+functionalities:-
+
+1)General functionality:-
+	* Awareness.
+	* Self-defence training.
+	* Escape.
+	* Use your sixth sense.
+	* You right to fight.
+	* pepper spray.
+2)Product functionalities:-
+	* Scream alarm:(male voice,police siren).
+	* fake call timer.
+	* where are you.
+	* Track me.
+	* friends list.
+	* settings:(Emergency service,Low battery alert,Set screen sound).
+	* Emergency distress signal(SOS).
+
+Wireframes:-
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		   
+		
+	
+	
+       
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+ 

@@ -1,0 +1,47 @@
+body{
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    /* background-color: #200302; */
+    /* background-image: linear-gradient(to right top, #371905, #452714, #54351e, #62442a, #715436); */
+    /* background-image: linear-gradient(to right bottom, #200302, #2b1212, #391c1c, #482726, #583230); */
+    /* background-image: linear-gradient(to left top, #200302, #2b1212, #391c1c, #482726, #583230); */
+    background-image: linear-gradient(20deg, #200302, #381f1f, #563837, #755251, #956e6c);
+}
+
+.movie-poster{
+    height: 500px;
+    width: 350px;
+    /* zoom in */
+    object-fit:cover ;
+    border-radius: 25px;
+    
+}
+
+.movie-container{
+    /* background-color: orchid; */
+    width: 350px;
+    text-align: center;
+    color: #fff;
+
+}
+.movie-name{
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    font-size: 38px;
+    font-weight: 800;
+}
+.movie-spec{
+    color: #A78584;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    margin: 0;
+}
+
+.movie-summary{
+    color: #FFE5E4;
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    font-weight: none;
+
+}

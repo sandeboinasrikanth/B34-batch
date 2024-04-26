@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinators</title>
+    <style>
+        body{
+            display: grid;
+            place-content: center;
+            min-height: 100vh;
+            
+        }
+        /* child combinators */
+        /* selectors - id, class, element */
+        /* parent selector > child selector */
+        .container{
+            border: 1px solid gray;
+        }
+        .container > p{
+            /* background-color: plum; */
+            font-family: cursive;
+
+        }
+
+
+        /* anchester combinators  <space> */
+        /* selector <space> selector */
+        .container  p{
+            font-weight: bold;
+
+        }
+        
+        
+        .container > p:nth-child(1){
+            background-color: green;
+
+        }
+
+        /* next sibling combinator +  */
+        .middle + p + p +p {
+            border: 2px solid blue;
+        } 
+
+        /* Next all sibling selectors */
+        .middle ~ p{
+            background-color: lightcoral;
+        }
+
+        ul{
+            list-style: none;
+        }
+
+        /* peseudo class  - gets applied when action is performed */
+        ul > li:hover{
+            color: red;
+        }
+
+        /* pseudo element  - fake */
+        ul > li::before{
+            content: "🚩";
+
+        }
+
+        ul > li::after{
+            content: "🌍";
+
+        }
+
+        .para::before{
+            content: " ";
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur, cupiditate.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur, cupiditate.</p>
+
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, alias?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, alias?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, alias?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, alias?</p>
+        <section>
+            <p>Grand child</p>
+        </section>
+        <p class="middle">
+            middle
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, alias?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, alias?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, alias?</p>
+    </div>
+
+    <div>
+        <ul>
+            <li>About</li>
+            <li class="two">Product</li>
+            <li>Our Team</li>
+            <li>Home</li>
+          </ul>
+
+          <p class="para">I had seriously high expectations for Josh’s CSS course. And honestly? It's exceeded them.</p>
+    </div>
+</body>
+</html>

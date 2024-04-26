@@ -1,0 +1,92 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.banner{
+    background: url("https://www.yourtrainingedge.com/wp-content/uploads/2019/05/background-calm-clouds-747964.jpg"), linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    /* background-blend-mode: hard-light; */
+    /* clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); */
+
+
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+
+}
+h1{
+    margin: 0;
+    /* background: rgba(26,25,25,0.574); */
+    /* width: 400px; */
+    padding: 24px;
+    color: hsl(195deg 7% 12%);
+    font-family: 'Dancing Script', cursive;
+    transform: rotate(352deg) translateY(-70px);
+    font-size: 50px;
+
+}
+ul{
+    list-style-type: none;
+    font-size: 24px;
+    font-family: Roboto, sans-serif;
+    color: rgb(37, 33, 33);
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(243, 74, 74);   
+
+}
+ul li{
+    padding: 10px;
+    width: 1000px;  
+}
+
+
+li:first-child{
+    background-color: red;
+    /* position: absolute; */
+    top: -500px;
+
+}
+
+li:nth-child(2){
+    background-color: pink;
+}
+
+li:nth-child(3){
+    background-color: lightblue;
+
+}
+
+li:nth-child(4){
+    background-color: orchid;
+
+}
+
+li:nth-child(5){
+    background-color: rgb(128, 218, 112);
+
+}
+.Cookies{
+    background-color: darkmagenta;
+    color: #fff;
+    width: 350px;
+    padding: 32px;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 5px;
+}
+.Cookies:hover{
+    transform: translate(75px);
+}
+.Cookies img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+
+}

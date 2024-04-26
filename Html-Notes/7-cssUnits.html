@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css units</title>
+    <style>
+        /* 1rem = 16px */
+        /* what is the use of rem & why we are using? */
+        /* just change rem in root it will affect to all */
+        :root{
+            font-size: 32px;
+        }
+
+        h2{
+            font-size: 2rem;
+        }
+        p{
+            font-size: 1rem;
+            color: rebeccapurple;
+            background-color: orchid;
+            padding: 0.5rem;
+
+        }
+
+        /* 1vh is 1% of screen height */
+        /* 1vw is 1% of screen width */
+        .box{
+            background-color: orange;
+            height: 50vh;
+            width: 50vw;
+
+        }
+        .box-1{
+            background: orangered;
+            width: 400px;
+            height: 400px;
+        }
+
+        /* 50% of  parent container */
+        .inner-box-1{
+            background: teal;
+            width: 50%;
+            height: 50%;
+
+        }
+    </style>
+</head>
+<body>
+    <h2>CSS Units</h2>
+    <h2>px, %, deg, vh, vw, rem, em</h2>
+
+    <p>Live More , Wore Less</p>
+
+    <div class="box"></div>
+
+    <div class="box-1">
+        <div class="inner-box-1"></div>
+
+    </div>
+</body>
+</html>

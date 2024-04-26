@@ -1,0 +1,79 @@
+1) Login
+2) login with facebook
+2.1) redirecting to FB page
+3) Forgot password  
+3.1) send login link
+3.2) create new account
+3.3) back to login
+4) Signup
+4.1) login with facebook
+4.1.1) redirecting to FB login page
+4.2) login
+5) download app from appstore
+6) download from playstore
+
+7) footer functionalities (13 functions)
+8) show password
+8.1) hide password
+9) DOB dropdown
+10) confirm
+11) change number
+12) login
+13) request new code
+
+14) follow 
+14.1) following-> unfollow
+15) Search -> redirecting to some other page
+16)Tweet
+16.1) everyone can reply
+16.2) upload image
+16.3) gif
+16.4)poll
+16.5) emoji
+16.6) schedule
+16.7) add tweet
+17) Tweet
+
+18) comment
+18.1) reply
+18.2) close click
+18.2.1) discard and save draft
+19) retweet
+20) share
+21) like
+22) 3 dots functionalites 
+22.1) follow
+22.2) add or remove
+22.3) mute
+22.4) block
+22.5)) embed
+22.6) report
+
+
+
+let searchBtn = document.querySelector('#search-btn');
+let searchBar = document.querySelector('.search-bar-container');
+let formBtn = document.querySelector('#login-btn');
+let loginBtn = document.querySelector('.login-form-container');
+let formClose = document.querySelector('#form-close');
+
+
+window.onscroll = () =>{
+    searchBtn.classList.remove('fa-times');
+    searchBar.classList.remove('active');
+}
+
+searchBtn.addEventListener('click', () =>{
+    searchBtn.classList.toggle('fa-times');
+    searchBar.classList.toggle('active');
+} );
+
+formBtn.addEventListener('click', () =>{
+    loginForm.classList.add('active');
+    
+} );
+
+formClose.addEventListener('click', () =>{
+    loginForm.classList.remove('active');
+    
+} );

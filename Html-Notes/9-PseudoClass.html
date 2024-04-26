@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class</title>
+    <style>
+        body{
+            margin: 50px;
+        }
+        .info{
+            width: 300px;
+            height: 300px;
+            background-color: rgb(252, 145, 236);
+            transition: 1s;
+        }
+        
+        .info:hover{
+            background-color: rgb(5, 138, 247);
+            transform: rotate(360deg) scale(1.5);
+            border-radius: 50%;
+            transform: scale(1.1);
+            background: rgb(150, 156, 244);
+            cursor: pointer;
+
+        }
+        .info:active{
+            transform: scale(0.9);
+            background: orangered;
+            cursor: pointer;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* pseudo element - fake  */
+        /* peseudo class (hover,active etc...) - gets applied when action is performed */
+        li::before {
+            content: "🏳️‍🌈";
+            font-size: 20px;
+            margin-right: 5px;
+        }
+
+        li::after {
+            content: "👌";
+            font-size: 20px;
+            margin-left: 5px;
+        }
+
+        .quote{
+            background-color: lightblue;
+            padding: 10px;
+            font-size: 30px;
+            border-radius: 5px;
+        }
+
+        .quote::before{
+            content: " ''"; 
+            font-size: 100px; 
+
+        }
+
+    </style>
+    
+</head>
+<body>
+    <div class="info"></div>
+
+    <nav>
+        <ul>
+            <li>About</li>
+            <li class="two">Product</li>
+            <li>Our Team</li>
+            <li>Home</li>
+          </ul>
+    </nav>
+
+    <div>
+        <p class="quote">Content is information produced and directed at an end-user or audience in 
+            the sectors of publishing, art, and communication.
+        </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        body{
+            display: grid;
+            place-content: center;
+            min-height: 100vh;
+            font-family: Roboto;
+
+        }
+        table{
+            border: 1px solid slategray;
+            border-collapse: collapse;
+        }
+        td,th{
+            border: 2px solid slategray;
+            padding: 10px;
+
+        }
+        /* tr > td + td + td{
+            text-align:right ;
+        } */
+
+        tr > td:nth-of-type(3){
+            text-align:right ;
+        }
+
+        .total{
+            text-align: right;
+        }
+
+        tbody > tr:nth-child(odd), tfoot > tr{
+            background-color: rgb(217, 236, 252);
+        }
+
+        tbody > tr:nth-child(even){
+            background-color: rgb(238, 247, 141);
+        }
+
+        th[colspan="4"]{
+            background-color: rgb(78, 250, 93);
+        }
+
+        .tr{
+            background-color: pink;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="4">Movies</th>
+            </tr>
+            <tr class="tr">
+                <th>Genre</th>
+                <th>Name</th>
+                <th>Rating</th>
+                <th>Budget (in mil $)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="4">Sci-fi</th>
+                <td>Intersteller</td>
+                <td>8.5</td>
+                <td>300</td>
+            </tr>
+            <tr>
+                <td>Inception</td>
+                <td>8.6</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Avengers</td>
+                <td>8</td>
+                <td>250</td>
+            </tr>
+            <tr>
+                <td>Dune</td>
+                <td>8.8</td>
+                <td>165</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Total</td>
+                <td class="total">765</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Form</title>
+    <style>
+        .user-form{
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+        }
+        input{
+            margin-bottom: 10px;
+        }
+        input[required]{
+            border: 2px solid rgb(237, 17, 54);
+        }
+        input[type="text"]{
+            background-color: rgb(192, 192, 239);
+            
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Forms</h1>
+    <!-- input self closing tag -->
+    <!-- type, placeholder are attribute of input element  -->
+    <form class="user-form">
+        <label for="name">Name</label>
+        <input type="text" name="username" id="name" placeholder="Enter your name" autofocus > 
+        <label for="email">Email</label>
+        <input type="email" name="useremail" id="email" placeholder="Enter your email" required> 
+        <label for="password">Password</label>
+        <input type="password" name="userpassword" id="password" placeholder="Enter your password">
+        <label for="age">Age</label>
+        <input type="number" name="userage" id="age" placeholder="Enter your Age" disabled>
+       
+
+        <div>
+            <input type="radio" value="male" name="gender" id="male">
+            <label for="male">Male</label>
+            <input type="radio" value="Female" name="gender" id="female">
+            <label for="female">Female</label>
+        </div>
+
+        <div>
+            <h4>Hobbies</h4>
+            <input type="checkbox" name="hobbies" id="badminton" checked>
+            <label for="badminton">Badminton</label> <br>
+
+            <input type="checkbox" name="hobbies" id="travelling" checked>
+            <label for="travelling">Travelling</label> <br>
+
+            <input type="checkbox" name="hobbies" id="biryani" checked>
+            <label for="biryani">Biryani</label> <br>
+
+            <input type="checkbox" name="hobbies" id="cricket">
+            <label for="cricket">Cricket</label> <br>
+
+            <input type="checkbox" name="hobbies" id="music">
+            <label for="music">Music</label>  <br>
+        </div>
+
+        <div>
+            <h4>State</h4>
+            <select >
+                <option value="">--- Select a State ---</option>
+                <option value="TN">Tamil Nadu</option>
+                <option value="KL">Kerala</option>
+                <option value="MH">Maharastra</option>
+                <option value="DL">Delhi</option>
+                <option value="AP">Andra Pradesh</option>
+            </select>
+        </div>
+
+        <div>
+            <h4>Date of Birth</h4>
+            <input type="date" >
+        </div>
+
+        <div>
+            <h4>Choose your Fav Color</h4>
+            <input type="color">
+        </div>
+
+        <div>
+            <h4>Tweet</h4>
+            <textarea placeholder="Tells us what in your mind" name="" id="" cols="40" rows="10"></textarea>
+        </div>
+        <input type="submit" value="Submit">
+    </form> 
+
+
+</body>
+</html>

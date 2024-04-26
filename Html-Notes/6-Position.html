@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions</title>
+    <style>
+        body{
+            display: grid;
+            place-content: center;
+            min-height: 100vh;
+        }
+        .profile{
+            height: 300px;
+            width: 300px;
+            border-radius: 50px;
+            font-family: Roboto;
+            background-image: linear-gradient(to right, #0668fb, #7b5bf0, #ad49df, #d133c9, #eb12af)
+        }
+        .circle{
+            width: 200px;
+            height: 200px;
+            margin: 50px;
+            border: 2px solid gray;
+            border-radius: 50%;
+            background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIowiTvupIDXVcDEnmpeWkig90a4kXRgwW8g&usqp=CAU");
+            position: relative;
+            background-size: cover;
+            box-shadow: 7px 8px 20px 1px rgba(0,0,0,0.75);
+        }
+        .eight{
+            font-family: bold;
+            font-size: 20px;
+            background-color: teal;
+            width: 25px;
+            text-align: center;
+            color: #fff;
+            border-radius: 50%;
+            border: 1px solid gray;
+            position: absolute;
+            top: -10px;
+            right: 27px;
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="profile">
+        <div class="circle">
+            <p class="eight">8</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+body{
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    /* background-image: linear-gradient(to right top , #051937,#33275d, #6f2d78, #b12681,#f01a78) ; */
+    background-color: rgba(26, 29, 45, 0.91);    
+}
+section{
+    background-color: rgb(49, 18, 78);
+    overflow: hidden;
+}
+
+.office-image{
+    background: url('https://images.pexels.com/photos/840996/pexels-photo-840996.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'), #7f3aae;
+    height: 20rem;
+    /* width: 100%; */
+    background-size: cover;
+    background-position: center;
+    background-blend-mode:luminosity ;
+    
+    
+}
+
+.card-content{
+    color: white;
+    /* text-align: center; */
+    padding: 1rem;
+    font-family: 'Inter',sans-serif;
+   
+}
+
+.insight{
+    color: #a85cdd;
+}
+
+.card-count {
+    margin-bottom: 0;
+    font-size: 1.3rem;
+    font-weight: 700;
+   
+
+}
+
+.card-count + p{
+    margin-top: 5px;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    font-family:  'Lexend Deca', sans-serif;
+    letter-spacing: 1.3px;
+    color: rgb(217 224 231 / 60%);
+}
+.card-info{
+    font-family:  'Lexend Deca', sans-serif;
+    font-size: 0.8rem;
+    line-height: 1.5;
+    color: rgb(217 224 231 / 60%);
+}
+
+.card-content > h2{
+    margin-top: 0;
+}
+
+/* .row > *{
+    background-color: pink;
+    border: 1px solid rebeccapurple;
+} */
+

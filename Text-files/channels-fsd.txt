@@ -1,0 +1,14 @@
+code World telugu
+racherla srikanth
+traversy media
+super simple dev
+DSA => arrays ,stacks and linkedList:
+
+
+//Data types :
+// 1. primitive Data Types => Basic fundamental Data type in Javascript
+// 2.Non-primitve Data types => Complex level Data types in javascript.
+
+
+
+
