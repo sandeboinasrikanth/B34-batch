@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events topic</title>
+</head>
+<body style="padding-bottom: 1000px;">
+    <!-- Sms App -->
+    <section class="sms-app">
+        <form action="">
+            <h1>SMS APP</h1>
+            <textarea onkeyup="smsTypeFun()" name="" id="text-area" cols="50" rows="10" placeholder="Type your msg here...."></textarea>
+        </form>
+        <h1>Remaining Characters:<span id="chars">100</span></h1>
+    </section>
+    <hr>
+
+    <!-- change password -->
+    <section class="change-password">
+        <h1>Change Password</h1>
+        <form action="">
+            <input  type="password" placeholder="Enter password" id="pass-box">
+            <input type="checkbox"  onchange="changePassword()" >Show me
+        </form>
+    </section>
+    <hr>
+    <!-- Like and Dislike -->
+    <section class="like-app">
+        <div class="button-section">
+            <h1>Likes App</h1>
+            <div>
+                <button onclick="liked()" >Like👍</button>
+                <h2 id="likes">0</h2>
+            </div>
+            <h1>Dislikes App</h1>
+            <div>
+                <button onclick="disliked()" >Dislike👎</button>
+                <h2 id="dislikes">0</h2>
+            </div>
+        </div>
+        <h2>Total: <span id="total">0</span></h2>
+    </section>
+    <hr>
+
+    <script src="./day2.js"></script>
+</body>
+</html>

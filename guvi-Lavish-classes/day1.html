@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dom practice</title>
 </head>
-<body>
+<body style="padding-bottom: 1000px">
     <!-- 1 -->
     <section>
         <h1 id="heading">Hello</h1>
@@ -46,6 +46,7 @@
 
     <!-- 4.employee task -->
     <section>
+        <h3>Employee Task</h3>
         <button  id="all-emp-btn">All employee</button>
         <button  id="male-emp-btn">Male employee</button>
         <button  id="female-emp-btn">Female employee</button>
@@ -55,12 +56,13 @@
             <label for="">Type Employee Name</label>
             <input type="search" id="search-box" placeholder="Search Here....">
         </form>
+        <br>
 
         <!-- lets create layout to display data in table format  -->
-        <table>
+        <table border="1">
             <thead>
-                <tr>
-                    <th>Id</th>
+                <tr >
+                    <th style="padding: 10px;">Id</th>
                     <th>FirstName</th>
                     <th>LastName</th>
                     <th>Email</th>

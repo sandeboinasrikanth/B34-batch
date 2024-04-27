@@ -5,7 +5,7 @@ function myFun(){
     // x.innerText = `<h1>Hello world</h1>`;
 
 }
-//---------------------
+//--------------------------------------
 
 document.getElementsByClassName("btn")[0]
 .addEventListener("click", function(){
@@ -26,7 +26,8 @@ document.getElementsByClassName("btn")[0]
     }
 })
 
-//---------------------
+
+//--------------------------------------
 
 // select list element
 let liElement = document.getElementsByTagName("li");
@@ -41,7 +42,8 @@ console.log(firstElement);
 
 let ulliElement = document.querySelectorAll("ul li");
 console.log(ulliElement)
-//-------------------------
+
+//------------------------------------
 /*
 Create 3 Buttons
 All Employee
@@ -141,8 +143,76 @@ let employees = [
     },
   ];
 
-  function allEmpFun(){
-    let allEmployee = document.getElementById("all-emp-btn");
-    let bodyData = document.getElementById("body-data");
-    allEmployee.append(bodyData)
+  //All Employee Data
+  let allEmpButton = document.querySelector("#all-emp-btn");
+  allEmpButton.addEventListener("click", function(){
+    displayEmployees(employees)
+
+  })
+
+  // male emp data
+  let maleButton = document.querySelector("#male-emp-btn")
+  .addEventListener("click", function(){
+    let maleEmployee = employees.filter(function(emp){
+       return emp.gender === "male";
+    })
+    console.table(maleEmployee);
+    displayEmployees(maleEmployee)
+  })
+
+  //female data
+  let femaleButton = document.querySelector("#female-emp-btn");
+  femaleButton.addEventListener("click", ()=>{
+    let femaleEmployee = employees.filter((emp)=>{
+        return emp.gender === "female"
+    })
+    console.log(femaleEmployee);
+    displayEmployees(femaleEmployee);
+
+  })
+
+  //search functionality logic
+  let searchBox = document.querySelector("#search-box");
+  searchBox.addEventListener("keyup", function(){
+        let textEntered =searchBox.value;
+        console.log(textEntered);
+
+        let filteredEmployees =[];
+
+        if(textEntered!=""){
+            //populate the data on search box
+            filteredEmployees=employees.filter((emp)=>{
+                return emp.first_name.toLowerCase().includes(textEntered.toLowerCase())  
+                || emp.last_name.toLowerCase().includes(textEntered.toLowerCase())
+
+            })
+            displayEmployees(filteredEmployees);
+        }
+  })
+
+
+
+
+  //Display data to get the data if user click on the button
+  let displayEmployees = (employees)=>{
+    //select the table
+    let tableBody = document.querySelector("#table-body");
+
+    //clear the table body
+    let tableRow = "";
+
+    for(let employee of employees){
+        tableRow += `
+            <tr>
+                <td>${employee.id}</td>
+                <td>${employee.first_name}</td>
+                <td>${employee.last_name}</td>
+                <td>${employee.email}</td>
+                <td>${employee.gender}</td>
+                <td>${employee.ip_address}</td>
+            </tr>
+        `
+        tableBody.innerHTML = tableRow
+    }
+
   }
