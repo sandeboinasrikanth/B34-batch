@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <h1>SMS APP</h1>
+        <textarea onkeyup="myTextFun()" name="" id="textarea-box" cols="60" rows="10" placeholder="Enter text here....."></textarea>
+    </section>
+    <h1>Remaining Characters: <span id="chars">100</span></h1>
+</body>
+
+
+<script>
+    let maxCount =100;
+    function myTextFun(){
+
+        //select textarea box
+        let textareaBox = document.getElementById("textarea-box").value.length;
+
+        //spanTag
+        let spanTag = document.getElementById("chars");
+
+        //logic
+        let remainingChars = maxCount-textareaBox;
+    
+        spanTag.innerText = remainingChars
+
+        
+
+    }
+</script>
+</html>
