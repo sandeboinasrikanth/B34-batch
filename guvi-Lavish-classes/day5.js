@@ -28,37 +28,35 @@ Promises Method:
 API =>
 fetch,
 
-
-
 */
 
 
-//created a promise constructor
-// const doPromise = new Promise((resolve, reject)=>{
-//     setTimeout(()=>{
-//         const skills = ["HTML","CSS","JAVASCRIPT","REACTJS","NODE.JS"];
-//         if(skills.length === 5){
-//             resolve(skills)
-//         }else{
-//             reject("Something is Wrong");
-//         }
-//     }, 2000)
-// });
+// created a promise constructor
+const doPromise = new Promise((resolve, reject)=>{
+    setTimeout(()=>{
+        const skills = ["HTML","CSS","JAVASCRIPT","REACTJS","NODE.JS"];
+        if(skills.length === 5){
+            resolve(skills)
+        }else{
+            reject("Something is Wrong");
+        }
+    }, 2000)
+});
 
-// console.log(doPromise);
+console.log(doPromise);
 
-//then ->    used to collect (or) Print the result.
-//catch ->   used to handle the error
-//finally -> 
+// then ->    used to collect (or) Print the result.
+// catch ->   used to handle the error
+// finally -> 
 
-//Display the result or error
-// doPromise.then((result)=>{
-//     console.log(result);
-// }).catch((error)=>{
-//     console.log(error);
-// }).finally(()=>{
-//     console.log("Finally");
-// })
+// Display the result or error
+doPromise.then((result)=>{
+    console.log(result);
+}).catch((error)=>{
+    console.log(error);
+}).finally(()=>{
+    console.log("Finally");
+})
 //----------------------------------------------------------------
 
 //create a promise object
@@ -146,36 +144,36 @@ fetch,
 -> Create same using Promise.all and promise.allSettled Method 
 */
 
-//promise Dependent with chaining
-let doProject = new Promise((resolve, reject)=>{
-    //doing the project
-    let isProjectDone = true;
-    if(isProjectDone){
-        resolve('Project is Done')
-    }else{
-        reject('Project is not done')
-    }
-})
+// //promise Dependent with chaining
+// let doProject = new Promise((resolve, reject)=>{
+//     //doing the project
+//     let isProjectDone = true;
+//     if(isProjectDone){
+//         resolve('Project is Done')
+//     }else{
+//         reject('Project is not done')
+//     }
+// })
 
-let attendTechnical = new Promise((resolve, reject)=>{
-    //attending the technical interview
-    let isTechnicalAttended = false;
-    if(isTechnicalAttended){
-        resolve("Technical Interview is Attended")
-    }else{
-        reject("Technical Interview is not Attended")
-    }
-})
+// let attendTechnical = new Promise((resolve, reject)=>{
+//     //attending the technical interview
+//     let isTechnicalAttended = false;
+//     if(isTechnicalAttended){
+//         resolve("Technical Interview is Attended")
+//     }else{
+//         reject("Technical Interview is not Attended")
+//     }
+// })
 
-let attendHrRound = new Promise((resolve, reject)=>{
-    //attending the HR round
-    let isHrRoundAttended = true;
-    if(isHrRoundAttended){
-        resolve("HR Interview is Attended")
-    }else{
-        reject("HR Interview is not Attended")
-    }
-})
+// let attendHrRound = new Promise((resolve, reject)=>{
+//     //attending the HR round
+//     let isHrRoundAttended = true;
+//     if(isHrRoundAttended){
+//         resolve("HR Interview is Attended")
+//     }else{
+//         reject("HR Interview is not Attended")
+//     }
+// })
 
 //promise chaining
 // doProject.then((msg)=>{
@@ -196,18 +194,18 @@ let attendHrRound = new Promise((resolve, reject)=>{
 // });
 
 //using promise.all method
-const promiseCollection = Promise.all([
-    doProject,
-    attendTechnical,
-    attendHrRound
-])
+// const promiseCollection = Promise.all([
+//     doProject,
+//     attendTechnical,
+//     attendHrRound
+// ])
 
-promiseCollection.then((msg)=>{
-    console.log(`${msg}`);
-    console.log("All Promises are Resolved...")
-}).catch((error)=>{
-    console.log(`${error}`);
-    console.log("All Promises are Rejected...")
-});
+// promiseCollection.then((msg)=>{
+//     console.log(`${msg}`);
+//     console.log("All Promises are Resolved...")
+// }).catch((error)=>{
+//     console.log(`${error}`);
+//     console.log("All Promises are Rejected...")
+// });
 
 

@@ -90,31 +90,61 @@ function displayFullName(firstname,lastname,callback){
 // displayFullName("John", "Doe", greeting);
 
 
-
 // const arr = ["Apple", "Banana", "Orange", "Mango"];
 // arr.map((item)=>{
 //   console.log(item)
 // })
 
+// const arr = [1,2,3,4,5];
+// arr.map((num)=>{
+//   console.log(num)
+// })
 
-function doSomething(callback){
-  setTimeout(()=>{
-    const data = ["Apple", "Banana", "Orange", "Mango","Straw Berrys"];
-    // callback(true, data)
-    callback( data)
-  },3000);
-}
 
-const callback = (err,data) =>{
-  if(data){
-    console.log(data)
-  }else{
-    console.log(err)
-  }
+// function doSomething(callback){
+//   setTimeout(()=>{
+//     const data = ["Apple", "Banana", "Orange", "Mango","Straw Berrys"];
+//     // callback(true, data)
+//     callback( data)
+//   },3000);
+// }
 
-}
+// const callback = (err,data) =>{
+//   if(data){
+//     console.log(data)
+//   }else{
+//     console.log(err)
+//   }
+
+// }
 
 // doSomething(callback);
+
+
+function doSomething(callback) {
+  setTimeout(() => {
+    const data = ["Apple", "Banana", "Orange", "Mango", "Strawberries"];
+    const err = false; // Simulate no error
+    // const err = true; // Simulate an error
+
+    if (err) {
+      callback("Error occurred", null);
+    } else {
+      callback(null, data);
+    }
+  }, 3000);
+}
+
+const callback = (err, data) => {
+  if (err) {
+    console.error("Error occurred:", err);
+  } else {
+    console.log("Data received:", data);
+  }
+};
+
+// doSomething(callback);
+
 
 /*
 1. Create a function Sum
@@ -123,24 +153,16 @@ const callback = (err,data) =>{
 Create a function that should take parameter with callback function and display the Data
 */
 
-function sum(n1,n2){
-  const num = n1+n2;
-}
 
-function multi(num,callback){
-  
-  
-
-}
 
 // multi(5,10,sum)
 
 /*
 Create 3 Functions
 1. makeUpperCase()
-2.reverseString()
-use above 2 as callback function
-3.handleName()
+2. reverseString()
+    use above 2 as callback function
+3. getData()
 
 srikanth => SRIKANTH
 HTNAKIRS
@@ -165,7 +187,7 @@ function getData(name, callback){
 }
 
 // getData("srikanth",makeUpperCase);
-// getData("srikanth",reverseString);
+getData("srikanth",reverseString);
 
 
 /*
@@ -300,10 +322,10 @@ setTimeout(() => {
                   setTimeout(() => {
                     countdown.innerText = time--;
                     setTimeout(() => {
-                      countdown.innerText = "Happy Summer Days...."
+                      countdown.innerText = "Happy Summer Days....";
                     }, 1000);
                     setTimeout(() => {
-                      countdown.innerText = "Happy Independence Day... "
+                      countdown.innerText = "Happy Independence Day... ";
                     }, 5000);
                   }, 1000);
                 }, 1000);
@@ -317,7 +339,5 @@ setTimeout(() => {
 }, 1000);
 
 
-
-
-
+//============================================
 
