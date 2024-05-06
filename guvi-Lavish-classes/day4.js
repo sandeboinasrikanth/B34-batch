@@ -45,6 +45,7 @@ console.log("Call RingingSound")
 console.log("Call Connected")
 console.log("Conversation Started ")
 console.log("Conversation Ended")
+console.log("Call Disconnected")
 
 //Asynchronous
 setTimeout(()=>{
