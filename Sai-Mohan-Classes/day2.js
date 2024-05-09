@@ -86,6 +86,7 @@ Promise.allSettled([]); => It is going to return a promise, that resolves after
 
 
 
+
 //Chaining promises:
 
 // function foo(num){

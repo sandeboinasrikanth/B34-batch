@@ -1,7 +1,7 @@
 /*
 Module:04 
 Synchronous: sequence
-Asynchronous: keep an hold  , Delay 
+Asynchronous: keeping an hold  , Delay 
     setTimeOut() => it is an inBuilt Asynchronous function in javascript. 
     // 2parameters
     // setTimeout takes function as parameter and the amount of Time taking for Excecution.

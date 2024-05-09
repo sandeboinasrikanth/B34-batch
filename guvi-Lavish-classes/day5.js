@@ -93,7 +93,7 @@ promise takes a list of promises as an array. It returns a promise result if all
 Any one promise get rejected it reject the whole result itself.
 1.The method takes an array of promises and return a promise.
 2.Resolve promises if all promises are fullfilled
-3.If one of the promises gets rejected then it reject all promises.
+3.If one of the promises gets rejected then it will reject all promises.
 syntax:
 Promise.all([Promise1,promise2, promise3, ..... ])
 */
@@ -180,7 +180,7 @@ let attendHrRound = new Promise((resolve, reject)=>{
 // promise chaining
 doProject.then((msg)=>{
     let theMsg = `${msg}, `;
-    attendHrRound.then((msg)=>{
+    attendTechnical.then((msg)=>{
         theMsg += `${msg}, `;
         attendHrRound.then((msg)=>{
             theMsg += `${msg}`;

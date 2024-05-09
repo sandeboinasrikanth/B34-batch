@@ -96,53 +96,49 @@ function displayFullName(firstname,lastname,callback){
 //   console.log(item)
 // })
 
-// const arr = [1,2,3,4,5];
-// arr.map((num)=>{
-//   console.log(num)
-// })
 
 
-// function doSomething(callback){
-//   setTimeout(()=>{
-//     const data = ["Apple", "Banana", "Orange", "Mango","Straw Berrys"];
-//     // callback(true, data)
-//     callback( data)
-//   },3000);
-// }
+function doSomething(callback){
+  setTimeout(()=>{
+    const data = ["Apple", "Banana", "Orange", "Mango","Straw Berrys"];
+    // callback(true, data)
+    callback( data)
+  },3000);
+}
 
-// const callback = (err,data) =>{
-//   if(data){
-//     console.log(data)
-//   }else{
-//     console.log(err)
-//   }
+const callback = (err,data) =>{
+  if(data){
+    console.log(data)
+  }else{
+    console.log(err)
+  }
 
-// }
+}
 
 // doSomething(callback);
 
 
-function doSomething(callback) {
-  setTimeout(() => {
-    const data = ["Apple", "Banana", "Orange", "Mango", "Strawberries"];
-    const err = false; // Simulate no error
-    // const err = true; // Simulate an error
+// function doSomething(callback) {
+//   setTimeout(() => {
+//     const data = ["Apple", "Banana", "Orange", "Mango", "Strawberries"];
+//     const err = false; // Simulate no error
+//     // const err = true; // Simulate an error
 
-    if (err) {
-      callback("Error occurred", null);
-    } else {
-      callback(null, data);
-    }
-  }, 3000);
-}
+//     if (err) {
+//       callback("Error occurred", null);
+//     } else {
+//       callback(null, data);
+//     }
+//   }, 3000);
+// }
 
-const callback = (err, data) => {
-  if (err) {
-    console.error("Error occurred:", err);
-  } else {
-    console.log("Data received:", data);
-  }
-};
+// const callback = (err, data) => {
+//   if (err) {
+//     console.error("Error occurred:", err);
+//   } else {
+//     console.log("Data received:", data);
+//   }
+// };
 
 // doSomething(callback);
 
